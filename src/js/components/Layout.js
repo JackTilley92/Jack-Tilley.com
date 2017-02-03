@@ -15,7 +15,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import ContactUs from './ContactUs';
 import Products from './Products';
 import ProductsMenu from './ProductsMenu';
-let imgUrl = 'template.png';
+let imgUrl = 'banner.jpg';
 
 const styles = {
   headline: {
@@ -30,13 +30,28 @@ const styles = {
     backgroundSize: 'cover',
     overflow: 'hidden'
   },
-  font:{
-    fontSize: 40,
-    paddingTop: 30,
-    fontColor: 'white',
-  },
   tabStyle:{
     backgroundColor: '#FFFFFF',
+    padding: 8,
+  },
+  appBar: {
+    backgroundColor: '#FFFFFF',
+  },
+  tabs: {
+    width: '50%',
+  },
+  bannerContainer:{
+    height:'auto',
+    width:'auto',
+    left:0,
+    top:0,
+    margin: 0,
+    padding: 0,
+  },
+  banner:{
+  },
+  statusBar:{
+    backgroundColor: '#000000',
   },
 };
 export default class TabsExampleControlled extends React.Component {
@@ -58,20 +73,26 @@ export default class TabsExampleControlled extends React.Component {
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
-          <Tabs
-              onChange={this.handleChange}
-              value={this.state.slideIndex}
-            >
-              <Tab label="Tab One" value={0} style = {styles.tabStyle} />
-              <Tab label="Tab Two" value={1} style = {styles.tabStyle} />
-              <Tab label="Tab Three" value={2} style = {styles.tabStyle} />
-            </Tabs>
+          <AppBar title={'JACK TILLEY'} style={styles.appBar} showMenuIconButton={false}>
+            <Tabs
+                onChange={this.handleChange}
+                value={this.state.slideIndex}
+                style={styles.tabs}
+              >
+                <Tab label="Tab One" value={0} style = {styles.tabStyle} />
+                <Tab label="Tab Two" value={1} style = {styles.tabStyle} />
+                <Tab label="Tab Three" value={2} style = {styles.tabStyle} />
+              </Tabs>
+            </AppBar>
             <SwipeableViews
               index={this.state.slideIndex}
               onChangeIndex={this.handleChange}
             >
               <div>
-                <h2 style={styles.headline}>Tabs with slide effect</h2>
+                  <div style={styles.banner}>
+                  <img className="kittens" src = 'banner.jpg'style={styles.banner} />
+                  </div>
+                  <AppBar title={''} style={styles.statusBar} showMenuIconButton={false} />
                   <ProductsMenu />
               </div>
               <div style={styles.slide}>

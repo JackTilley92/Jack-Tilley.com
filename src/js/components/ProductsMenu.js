@@ -10,7 +10,6 @@ import ActionInfo from 'material-ui/svg-icons/action/info';
 import styles from './Layout'
 const ProductsMenu = () => (
   <MobileTearSheet>
-    <img className="kittens" src = 'Profiler.png' />
     <List style ={styles.font} >
       <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
       <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
