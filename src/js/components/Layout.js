@@ -94,7 +94,7 @@ export default class TabsExampleControlled extends React.Component {
                   <div style={styles.banner}>
                     <img className="kittens" src = 'banner.jpg'style={styles.banner} />
                   </div>
-                  <AppBar title={'Status: Employed'} style={styles.statusBar} showMenuIconButton={false} />
+                  <AppBar title={'Status: Employed'} style={styles.statusBar} showMenuIconButton={false}  titleStyle={{color:'white'}} />
                   <AboutMe />
               </div>
               <div style={styles.slide}>
