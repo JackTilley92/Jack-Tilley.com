@@ -32,8 +32,6 @@ const styles = {
     flexWrap: 'no-wrap'
   },
   nowrap: {
-    display: 'flex',
-    flexWrap: 'wrap'
   },
   contentContainer:{
     display: 'flex',
@@ -57,10 +55,10 @@ const styles = {
     height: 150,
     width: 150,
     marginRight: 20,
+    float: 'left',
 
     marginBottom: 15,
     textAlign: 'center',
-    display: 'inline-block',
     backgroundColor: 'white',
   },
   paper:{

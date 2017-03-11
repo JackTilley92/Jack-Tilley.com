@@ -86,8 +86,8 @@ export default class TabsExampleControlled extends React.Component {
         <div>
           <AppBar title={'JACK TILLEY'} style={styles.appBar} showMenuIconButton={false}>
             <Tabs onChange={this.handleChange} value={this.state.slideIndex} style={styles.tabs}>
-                <Tab label="Tab One" value={0} style = {styles.tabStyle} />
-                <Tab label="Tab Two" value={1} style = {styles.tabStyle} />
+                <Tab label="About Me" value={0} style = {styles.tabStyle} />
+                <Tab label="Fun" value={1} style = {styles.tabStyle} />
                 <Tab label="Tab Three" value={2} style = {styles.tabStyle} />
               </Tabs>
             </AppBar>
