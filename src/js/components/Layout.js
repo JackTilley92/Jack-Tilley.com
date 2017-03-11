@@ -17,7 +17,7 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import ContactUs from './ContactUs';
-import Products from './Products';
+import Projects from './Projects';
 import AboutMe from './AboutMe';
 let imgUrl = 'banner.jpg';
 
@@ -45,6 +45,9 @@ const styles = {
   },
   appBar: {
     backgroundColor: '#FFFFFF',
+  },
+  projectsPage: {
+    backgroundColor: '#000000',
   },
   tabs: {
     width: '50%',
@@ -100,7 +103,14 @@ export default class TabsExampleControlled extends React.Component {
                   <AboutMe />
               </div>
               <div style={styles.slide}>
-                  <Products />
+
+
+                <Projects />
+
+
+
+
+
               </div>
               <div style={styles.slide}>
                 <ContactUs />

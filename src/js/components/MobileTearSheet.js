@@ -19,8 +19,7 @@ let MobileTearSheet = React.createClass({
         marginBottom: 24,
         marginRight: 24,
         marginLeft: 104,
-        fontColor: 'white',
-        backgroundColor: '#813772',
+        backgroundColor: '#000FFF',
         width: 960,
 
       },
@@ -35,7 +34,7 @@ let MobileTearSheet = React.createClass({
         display: 'block',
         position: 'relative',
         marginTop: -10,
-        width: 360
+        width: 360,
       }
     };
 
