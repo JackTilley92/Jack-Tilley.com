@@ -19,7 +19,6 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import ContactUs from './ContactUs';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
-let imgUrl = 'banner.jpg';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -32,12 +31,6 @@ const styles = {
     paddingTop: 16,
     marginBottom: 12,
     fontWeight: 400,
-  },
-  root: {
-
-    backgroundImage: 'url('+ imgUrl + ') noRepeat center center fixed',
-    backgroundSize: 'cover',
-    overflow: 'hidden'
   },
   tabStyle:{
     backgroundColor: '#FFFFFF',
@@ -52,15 +45,9 @@ const styles = {
   tabs: {
     width: '50%',
   },
-  bannerContainer:{
-    height:'auto',
-    width:'auto',
-    left:0,
-    top:0,
-    margin: 0,
-    padding: 0,
-  },
   banner:{
+    alignSelf: 'stretch',
+    width: null
   },
   statusBar:{
     backgroundColor: '#000000',
@@ -68,7 +55,7 @@ const styles = {
     textColor: 'white',
   },
 };
-export default class TabsExampleControlled extends React.Component {
+export default class NavigationB extends React.Component {
 
   constructor(props) {
     super(props);
@@ -96,20 +83,15 @@ export default class TabsExampleControlled extends React.Component {
             </AppBar>
             <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
               <div>
-                  <div style={styles.banner}>
-                    <img className="kittens" src = 'banner.jpg'style={styles.banner} />
+                  <div>
+                    <img  src = 'banner.jpg'style={styles.banner} width = "100%" height = "100%"/>
                   </div>
                   <AppBar title={'Status: Employed'} style={styles.statusBar} showMenuIconButton={false}  titleStyle={{color:'white'}} />
                   <AboutMe />
               </div>
               <div style={styles.slide}>
 
-
-                <Projects />
-
-
-
-
+                //<Projects />
 
               </div>
               <div style={styles.slide}>

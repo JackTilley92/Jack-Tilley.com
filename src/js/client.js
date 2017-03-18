@@ -1,15 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-// Needed for onTouchTap
-// http://stackoverflow.com/a/34015469/988941
+import { Router, Route, Link } from 'react-router'
+
+import * as firebase from "firebase";
+
+// Initialize Firebase
+var config = {
+  apiKey: "<API_KEY>",
+  authDomain: "<PROJECT_ID>.firebaseapp.com",
+  databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+  storageBucket: "<BUCKET>.appspot.com",
+};
+
+firebase.initializeApp(config);
 injectTapEventPlugin();
 
-require('./module1.js');
-require('./module2.js');
+
 
 const app = document.getElementById('app');
-ReactDOM.render(<Layout/>, app);
+ReactDOM.render(
+  <Router>
+      <Route path="/" component={Home}>
+      </Route>
+  </Router>
+,app);
