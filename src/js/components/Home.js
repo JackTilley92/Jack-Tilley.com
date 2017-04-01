@@ -2,7 +2,6 @@
 
 import Header from "./Header";
 import AppBar from 'material-ui/AppBar';
-import AppBarExampleIcon from "./Bar";
 import React from 'react';
 
 import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more';
@@ -44,16 +43,7 @@ const styles = {
   },
   tabs: {
     width: '50%',
-  },
-  banner:{
-    alignSelf: 'stretch',
-    width: null
-  },
-  statusBar:{
-    backgroundColor: '#000000',
-    textAlign: 'center',
-    textColor: 'white',
-  },
+  }
 };
 export default class NavigationB extends React.Component {
 
@@ -71,6 +61,7 @@ export default class NavigationB extends React.Component {
   };
 
   render() {
+
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
@@ -83,16 +74,10 @@ export default class NavigationB extends React.Component {
             </AppBar>
             <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
               <div>
-                  <div>
-                    <img  src = 'banner.jpg'style={styles.banner} width = "100%" height = "100%"/>
-                  </div>
-                  <AppBar title={'Status: Employed'} style={styles.statusBar} showMenuIconButton={false}  titleStyle={{color:'white'}} />
-                  <AboutMe />
+                <AboutMe />
               </div>
               <div style={styles.slide}>
-
-                //<Projects />
-
+                <Projects />
               </div>
               <div style={styles.slide}>
                 <ContactUs />

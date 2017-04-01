@@ -6,7 +6,7 @@ import Flexbox from 'flexbox-react';
 import Divider from 'material-ui/Divider';
 import Paper from 'material-ui/Paper';
 import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
-
+import AppBar from 'material-ui/AppBar';
 const styles = {
   color: {
     backgroundColor: "#002d29"
@@ -98,11 +98,20 @@ const styles = {
   },
   flatContainer:{
     padding: 1
+  },
+
+  statusBar:{
+    backgroundColor: '#000000',
+    textAlign: 'center',
+    textColor: 'white',
   }
 }
 const AboutMe = () => (
 
-  <div class="row">
+  <div class="Page">
+    <img  src = 'banner.jpeg'  width = "100%" height = "100%"/>
+    <AppBar title={'Status: Employed'} style={styles.statusBar} showMenuIconButton={false}  titleStyle={{color:'white'}} />
+
     <div class="About Me" style={styles.contentContainer}>
       <div style={styles.contentSection}>
         <header style={styles.headerStyle}>
@@ -165,6 +174,7 @@ const AboutMe = () => (
               I was re-hired by Ballzey to write more tests in Python and utilize them with Amazon Web Services Device Farm.
               My time at Ballzey was valuable as I was working alongside a highly skilled engineer that I learned many skills from.
               We worked as a team helping each other in order to accomplish our objectives.
+
               <br />
               <a href="https://www.sqs.com">
                 <FlatButton label="Website" style={{marginTop: 15, color: '#000000'}} />
@@ -299,6 +309,14 @@ const AboutMe = () => (
         </header>
         <p style={styles.contentText}>
           I graduated from Dublin City University in November of 2016 with a BSc in Computer Applications and Software Engineering.
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
+          ........................ ........................... ........................... ........................... ........................... ...........................
         </p>
       </div>
     </div>

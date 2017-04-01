@@ -13,7 +13,7 @@ import firebase from 'firebase';
 
 const styles2 = {
   projectsPage:{
-    backgroundColor: '#000000',
+    backgroundColor: '#FFFFFF',
     marginLeft: 20,
     marginRight: 20,
     marginTop: 15,
@@ -21,21 +21,22 @@ const styles2 = {
   }
 }
 
+
+const Projects = () => (
+  <MobileTearSheet>
+    <List>
+      <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+      <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
+      <ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
+      <ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
+      <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+    </List>
+  </MobileTearSheet>
+);
+
+export default Projects;
+/*
 class Projects extends React.Component {
-  /*constructor(props){
-    super(props);
-  }
-  componentDidMount(){
-    //Fetch the most recent post
-    firebase.database().ref('/Blog/Post').on("value", (snapshot) => {
-      console.log(snapshot.val()[Object.keys(snapshot.val())[0]]);
-      this.setState({
-        post: snapshot.val()[Object.keys(snapshot.val())[0]]
-      });
-    }, (error) => {
-      console.log(error);
-    });
-  }*/
   render() {
 
         <MobileTearSheet>
@@ -54,3 +55,4 @@ class Projects extends React.Component {
 }
 
 export default Projects;
+*/
