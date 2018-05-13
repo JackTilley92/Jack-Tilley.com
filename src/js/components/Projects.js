@@ -10,7 +10,6 @@ import ActionInfo from 'material-ui/svg-icons/action/info';
 import styles from './Home'
 import firebase from 'firebase';
 
-
 const styles2 = {
   projectsPage:{
     backgroundColor: '#FFFFFF',
@@ -18,11 +17,41 @@ const styles2 = {
     marginRight: 20,
     marginTop: 15,
     marginBottom: 15
+  },
+   contentContainer:{
+    display: 'flex',
+    marginRight: '25%' ,
+    marginLeft: '25%',
+  },
+   headerStyle: {
+    fontSize: 30,
+    color: "#004d46",
+    justifyContent: 'center',
+    	display: 'flex',
+  },
+   centered:{
+	display: 'flex',
+    justifyContent: 'center',
+  },
+  contentSection: {
+    paddingTop: 60,
   }
+
 }
 
+const Header = () => (
+  	<header style={styles2.headerStyle}>FUN </header>
+);
 
-const Projects = () => (
+const FeaturedProject = () => (
+  <p> The space is saved for technical side projects. The kittens are at work to add side projects.</p>
+);
+
+const ProjectList = () => (
+  <p> Since I promised fun. Here is some art that I do.</p>
+);
+
+const ProjectsList = () => (
   <MobileTearSheet>
     <List>
       <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
@@ -34,7 +63,32 @@ const Projects = () => (
   </MobileTearSheet>
 );
 
+const Projects = () => (
+
+    <div class="Fun" style={styles2.contentContainer}>
+      <div style={styles2.contentSection}>
+  			<Header />
+  			<FeaturedProject />
+  			<div style={{marginBottom: 20}}>
+  			  <img style={styles2.centered} src = 'TechSupport.png'  width = '40%' height = '40%' />
+
+  			</div>
+  			<div>
+    			<ProjectList />
+  			</div>
+  			<div>
+  			  <img  src = 'Art1.jpg'  width = "50%" height = "50%"/>
+  			  <img  src = 'Art2.jpg'  width = "50%" height = "50%"/>
+  			  <img  src = 'Art3.jpg'  width = "50%" height = "50%"/>
+  			  <img  src = 'Art4.jpg'  width = "50%" height = "50%"/>
+  			</div>
+  		</div>
+  	</div>
+);
 export default Projects;
+
+
+
 /*
 class Projects extends React.Component {
   render() {

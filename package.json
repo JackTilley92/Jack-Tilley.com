@@ -12,20 +12,29 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "chart.js": "^1.1.1",
+    "file-saver": "^1.3.8",
     "firebase": "^3.7.2",
     "flexbox-react": "^4.2.1",
     "gl-react-dom-static-container": "^1.1.3",
     "gl-react-image": "0.0.2",
+    "html-pdf": "^2.2.0",
     "material-ui": "^0.17.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "^15.6.2",
+    "react-chartjs": "^1.2.0",
+    "react-dom": "^15.6.2",
+    "react-donut-chart": "^1.1.6",
+    "react-inline-css": "^2.3.1",
     "react-router": "git+https://github.com/acdlite/react-router.git#d8a41c86090ee661bc19b93c0a9169db510c46d8",
+    "react-svg-piechart": "^2.1.0",
     "react-swipeable-views": "^0.10.3",
     "react-tap-event-plugin": "^2.0.1",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-plugin-react": "^6.10.3"
+  },
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"

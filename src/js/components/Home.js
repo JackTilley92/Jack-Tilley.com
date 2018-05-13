@@ -18,7 +18,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import ContactUs from './ContactUs';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
-
+import Skills from './Skills';
 const muiTheme = getMuiTheme({
   palette: {
     textColor: cyan500,
@@ -61,7 +61,6 @@ export default class NavigationB extends React.Component {
   };
 
   render() {
-
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
@@ -69,15 +68,19 @@ export default class NavigationB extends React.Component {
             <Tabs onChange={this.handleChange} value={this.state.slideIndex} style={styles.tabs}>
                 <Tab label="About Me" value={0} style = {styles.tabStyle} />
                 <Tab label="Fun" value={1} style = {styles.tabStyle} />
-                <Tab label="Tab Three" value={2} style = {styles.tabStyle} />
+                <Tab label="Skills" value={2} style = {styles.tabStyle} />
+                <Tab label="Contact" value={3} style = {styles.tabStyle} />
               </Tabs>
             </AppBar>
             <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
-              <div>
+              <div style={styles.slide}>
                 <AboutMe />
               </div>
               <div style={styles.slide}>
                 <Projects />
+              </div>
+              <div style={styles.slide}>
+                <Skills />
               </div>
               <div style={styles.slide}>
                 <ContactUs />
