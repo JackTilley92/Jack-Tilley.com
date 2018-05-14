@@ -38,7 +38,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "serve": "webpack && serve src",
+    "serve": "webpack && serve -p 80 src",
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
