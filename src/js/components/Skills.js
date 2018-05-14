@@ -10,8 +10,8 @@ import FlatButton from 'material-ui/FlatButton';
 const styles = {
   contentContainer:{
     display: 'flex',
-    marginRight: '10%' ,
-    marginLeft: '10%'
+    marginRight: '20%' ,
+    marginLeft: '20%'
   },
   contentSection: {
     paddingTop: 60,
