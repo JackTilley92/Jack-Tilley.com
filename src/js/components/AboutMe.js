@@ -252,7 +252,7 @@ const AboutMe = () => (
           <p style={styles.contentText}>
             <Paper style={styles.paperExp} zDepth={5}>
               <a href="http://www.instacoach.com/">
-                <img src="instacoach.jpg" style={styles.icon} />
+                <img src="instacoach.png" style={styles.icon} />
               </a>
             </Paper>
             <div style={styles.nowrap}>
