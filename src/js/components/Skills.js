@@ -10,8 +10,8 @@ import FlatButton from 'material-ui/FlatButton';
 const styles = {
   contentContainer:{
     display: 'flex',
-    marginRight: '20%' ,
-    marginLeft: '20%'
+    marginRight: '12%' ,
+    marginLeft: '12%'
   },
   contentSection: {
     paddingTop: 60,
@@ -31,6 +31,12 @@ const styles = {
   },
   color: {
     backgroundColor: "#002d29"
+  },
+  centered:{
+    display: 'flex',
+    justifyContent: 'center',
+    marginRight: '16%' ,
+    marginLeft: '16%'
   }
 }
 
@@ -226,8 +232,8 @@ export default class Skills extends React.Component {
                     For those of you interested this website was built from NodeJS with the REACTJS framework.
                   </p>
 
-                  <div className="Skillschart">
-                    <BarChart data={chartData} options={chartOptions} width="700" height="500"/>
+                  <div className="Skillschart" style = {styles.centered}>
+                    <BarChart data={chartData} options={chartOptions} width="850" height="500"/>
                   </div>
                   <header style={styles.headerStyle}>
                     B.Sc. in Computer Applications & Software Engineering
