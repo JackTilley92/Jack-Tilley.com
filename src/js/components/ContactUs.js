@@ -68,7 +68,7 @@ export default class ContactUs extends React.Component {
         </a>
 
         <div class="ContactMe" style={styles.contentContainer}>
-            <div style={styles.contentSection}>
+          <div style={styles.contentSection}>
             <header style={styles.headerStyle}>
               Contact Me
             </header>
@@ -87,11 +87,10 @@ export default class ContactUs extends React.Component {
             <p style={styles.contentText}>
               5 Sandymount Avenue, D4, Dublin, Ireland
             </p>
+          </div>
+        </div>
 
-        </div>
-        </div>
-
-        </div>
+      </div>
 
 
     );

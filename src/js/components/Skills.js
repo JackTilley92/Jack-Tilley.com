@@ -10,8 +10,8 @@ import FlatButton from 'material-ui/FlatButton';
 const styles = {
   contentContainer:{
     display: 'flex',
-    marginRight: '20%' ,
-    marginLeft: '20%'
+    marginRight: '14%' ,
+    marginLeft: '14%'
   },
   contentSection: {
     paddingTop: 60,
@@ -34,9 +34,8 @@ const styles = {
   },
   centered:{
     display: 'flex',
-    justifyContent: 'center',
-    marginRight: '16%' ,
-    marginLeft: '16%'
+    justifyContent: 'center'
+
   }
 }
 
@@ -213,11 +212,11 @@ export default class Skills extends React.Component {
 
           return (
             <div class="MySkills Top level" >
-              <a href={'Jack-Tilley-CV-Software-Engineer.pdf'} download>
-
-              <RaisedButton label="Download my CV here!" fullWidth={true} style={styles.color} />
-
-              </a>
+            <a href={'Jack-Tilley-CV-Software-Engineer.pdf'} download>
+              <div class="FlatButton1" style = {styles.centered}>
+              <FlatButton label="Download my CV here!" Primary={true} fullWidth={true} style={{marginTop: 15, color: '#000000' }}  />
+              </div>
+            </a>
               <div class="MySkills" style={styles.contentContainer}>
                 <div style={styles.contentSection}>
                   <header style={styles.headerStyle}>
