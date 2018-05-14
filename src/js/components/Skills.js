@@ -10,8 +10,8 @@ import FlatButton from 'material-ui/FlatButton';
 const styles = {
   contentContainer:{
     display: 'flex',
-    marginRight: '12%' ,
-    marginLeft: '12%'
+    marginRight: '20%' ,
+    marginLeft: '20%'
   },
   contentSection: {
     paddingTop: 60,
@@ -233,7 +233,7 @@ export default class Skills extends React.Component {
                   </p>
 
                   <div className="Skillschart" style = {styles.centered}>
-                    <BarChart data={chartData} options={chartOptions} width="850" height="500"/>
+                    <BarChart data={chartData} options={chartOptions} width="770" height="450"/>
                   </div>
                   <header style={styles.headerStyle}>
                     B.Sc. in Computer Applications & Software Engineering
