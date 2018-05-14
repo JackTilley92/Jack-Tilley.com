@@ -227,7 +227,7 @@ export default class Skills extends React.Component {
                   </p>
 
                   <div className="Skillschart">
-                    <BarChart data={chartData} options={chartOptions} width="1000" height="500"/>
+                    <BarChart data={chartData} options={chartOptions} width="700" height="500"/>
                   </div>
                   <header style={styles.headerStyle}>
                     B.Sc. in Computer Applications & Software Engineering
