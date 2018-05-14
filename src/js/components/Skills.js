@@ -10,8 +10,8 @@ import FlatButton from 'material-ui/FlatButton';
 const styles = {
   contentContainer:{
     display: 'flex',
-    marginRight: '7%' ,
-    marginLeft: '7%'
+    marginRight: '10%' ,
+    marginLeft: '10%'
   },
   contentSection: {
     paddingTop: 60,
@@ -206,7 +206,7 @@ export default class Skills extends React.Component {
 
 
           return (
-            <div>
+            <div class="MySkills Top level" style={styles.contentContainer}>
               <a href={'Jack-Tilley-CV-Software-Engineer.pdf'} download>
 
               <RaisedButton label="Download my CV here!" fullWidth={true} style={styles.color} />
