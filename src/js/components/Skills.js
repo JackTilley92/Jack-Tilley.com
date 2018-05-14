@@ -206,7 +206,7 @@ export default class Skills extends React.Component {
 
 
           return (
-            <div class="MySkills Top level" style={styles.contentContainer}>
+            <div class="MySkills Top level" >
               <a href={'Jack-Tilley-CV-Software-Engineer.pdf'} download>
 
               <RaisedButton label="Download my CV here!" fullWidth={true} style={styles.color} />
