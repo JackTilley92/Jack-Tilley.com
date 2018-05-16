@@ -9,6 +9,7 @@ import Divider from 'material-ui/Divider';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 import styles from './Home'
 import firebase from 'firebase';
+import FlatButton from 'material-ui/FlatButton';
 
 const styles2 = {
   projectsPage:{
@@ -82,6 +83,11 @@ const Projects = () => (
   			  <img  src = 'Art3.jpg'  width = "50%" height = "50%"/>
   			  <img  src = 'Art4.jpg'  width = "50%" height = "50%"/>
   			</div>
+        <a href={'Night Run V1.0.zip'} download>
+          <div class="FlatButton1" style = {styles.centered}>
+            <FlatButton label="NightRun Game" Primary={true} fullWidth={true} style={{marginTop: 15, color: '#000000' }}  />
+          </div>
+        </a>
   		</div>
   	</div>
 );
